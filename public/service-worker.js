@@ -1,4 +1,13 @@
-const FILES_TO_CACHE = ["/", "/index.html", "app.js", "favicon.ico"];
+const FILES_TO_CACHE = [
+  "/", 
+  "/index.html", 
+  "index.js", 
+  "styles.css",
+  "db.js",
+  "manifest.webmanifest",
+  "icons/icon-192x192.png",
+  "icons/icon-512x512.png"
+];
 
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
@@ -12,7 +21,7 @@ self.addEventListener("install", function(evt) {
     })
   );
 
-  self.skipWaiting();
+  //self.skipWaiting();
 });
 
 // activate
@@ -55,4 +64,12 @@ self.addEventListener("fetch", function(evt) {
     );
 
     return;
-}});
+}
+  evt.respondWith(
+    fetch(evt.request).catch(()=>{
+      return caches.match(evt.request).then(res=>{
+        return res || caches.match('/')
+      })
+    })
+  )
+});
