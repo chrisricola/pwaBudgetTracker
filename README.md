@@ -8,6 +8,9 @@ Allows user to track their budget, enter deposits and withdrawls. The app has of
 
 This is a Budget traking app that is is deployed through Heroku. Its utilzes Node, Express, Mongo and Mongoose for the back end and databases. The front is html, Javascript and css. It runs a Webmanifest for the icons. Its a PWA app so its able to funtion offline. Dependacies include express, morgan, monogoose and compression. 
 
+![Screen Shot 2020-06-19 at 10 42 59 PM](https://user-images.githubusercontent.com/62358897/85193650-7151d300-b27f-11ea-96c9-ed1f18db6319.png)
+
+
 ## Site 
 
 https://nameless-stream-75806.herokuapp.com/
