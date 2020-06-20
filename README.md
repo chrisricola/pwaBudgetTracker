@@ -2,7 +2,7 @@
 
 Allows user to track their budget, enter deposits and withdrawls. The app has offline functionality. So the user can make transactions without a connection. Also shows the User the results in a graph and chart.
 
-Screen Shot 2020-06-19 at 10.42.59 PM
+
 
 ## Description
 
